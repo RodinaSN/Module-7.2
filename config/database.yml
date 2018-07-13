@@ -8,7 +8,7 @@ default: &default
 
 development:
   <<: *default
-  database: appname_development
+  database: lesson7car_development
   username: postgres
   password: postgres
   host: 127.0.0.1
@@ -16,7 +16,7 @@ development:
 
 test:
   <<: *default
-  database: appname_test
+  database: lesson7car_test
   username: postgres
   password: postgres
 host: 127.0.0.1
