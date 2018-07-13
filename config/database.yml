@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  port: 5432
+
+
+development:
+  <<: *default
+  database: appname_development
+  username: postgres
+  password: postgres
+  host: 127.0.0.1
+
+
+test:
+  <<: *default
+  database: appname_test
+  username: postgres
+  password: postgres
+host: 127.0.0.1
